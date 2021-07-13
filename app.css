@@ -1,0 +1,119 @@
+/*Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)*/
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.attribution {
+  position: absolute;
+  bottom: 2%;
+}
+.container {
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-top {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  z-index: -1;
+}
+.image-bottom {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.card {
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.section1,
+.section2,
+.section3 {
+  width: 100%;
+  height: 100%;
+}
+.section1 {
+  flex: 2;
+  background: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  background-repeat: repeat;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+.section2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+.section3 {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.profile {
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: -30%;
+}
+.Name,
+.city {
+  margin-bottom: 10px;
+}
+.Name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.city {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+.subText {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 0.1rem;
+  margin-top: 0.4rem;
+}
